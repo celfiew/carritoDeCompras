@@ -13,5 +13,5 @@
 
 >PatternState :door:
 
-![imagenes]https://github.com/celfiew/carritoDeCompras/blob/main/src/classes/car.png)
-![imagenes](https://github.com/celfiew/carritoDeCompras/blob/main/src/classes/carState.png
+![imagenes](https://github.com/celfiew/carritoDeCompras/blob/main/src/classes/car.png)
+![imagenes](https://github.com/celfiew/carritoDeCompras/blob/main/src/classes/carState.png)
