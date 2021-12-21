@@ -1,0 +1,13 @@
+PatrónState: un carrito de comprasSe desea modelar un carrito de compras siguiendo
+lossiguientes lineamientos:
+●El carrito tiene un estado y un conjunto de productos. OK
+●Cada producto tiene solamente descripción y precio. OK
+●Puede estar en alguno de los siguientes estados (solouno a la vez): -Vacío.-classes.Cargando.-classes.Pagando.-classes.Cerrado.
+
+También, se le pueden indicar las siguientesinstrucciones:
+●Agregar un producto al carrito(pasándole como parámetro al método un objeto de tipoproducto).
+●Cancelar el carrito (vuelve a estar vacío).
+●Volver al punto anterior ( salvo que esté cerrado).
+●Pasar al siguiente estado (en el caso de estar cerrado,vuelve a estar vacío).
+
+

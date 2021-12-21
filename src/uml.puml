@@ -1,0 +1,59 @@
+@startuml
+
+class Carrito{
+-Estado: Estados
+-Producto: productos
+
+//+Context():void
+//+getState(): int
+//+setState():void
+}
+class Producto{
+- descripcion: sting
+- precio: double
+}
+
+interface Estado{
++ {abstract} agregarUnProducto():void
++ {abstract} cancelarCarrito():void
++ {abstract} volverAlPuntoAnterior():void
++ {abstract} PasarAlSiguienteEstado():void
+}
+
+class Vacio{
++ agregarUnProducto():void
++ cancelarCarrito():void
++ volverAlPuntoAnterior():void
++ PasarAlSiguienteEstado():void
+}
+
+class Cargando{
++ agregarUnProducto():void
++ cancelarCarrito():void
++ volverAlPuntoAnterior():void
++ PasarAlSiguienteEstado():void
+}
+
+class Pagando{
++ agregarUnProducto():void
++ cancelarCarrito():void
++ volverAlPuntoAnterior():void
++ PasarAlSiguienteEstado():void
+}
+
+class Cerrado{
++ agregarUnProducto():void
++ cancelarCarrito():void
++ volverAlPuntoAnterior():void
++ PasarAlSiguienteEstado():void
+}
+
+
+Carrito *-right- "*" Producto
+Carrito *-- "1" Estado:estado
+Estado <-- Vacio
+Estado <-- Cargando
+Estado <-- Pagando
+Estado <-- Cerrado
+
+@enduml
